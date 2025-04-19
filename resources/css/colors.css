@@ -1,0 +1,87 @@
+:root {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+    --text: var(--clr-dark-a0);
+    --text-inverse: var(--clr-light-a0);
+
+    /** Theme primary colors */
+    --clr-primary-a0: #3f69c4;
+    --clr-primary-a10: #4b6bbc;
+    --clr-primary-a20: #556eb5;
+    --clr-primary-a30: #5e70ad;
+    --clr-primary-a40: #6573a6;
+    --clr-primary-a50: #6c759e;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #ffffff;
+    --clr-surface-a10: #f0f0f0;
+    --clr-surface-a20: #e1e1e1;
+    --clr-surface-a30: #d3d3d3;
+    --clr-surface-a40: #c5c5c5;
+    --clr-surface-a50: #b6b6b6;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #edeff9;
+    --clr-surface-tonal-a10: #e0e2eb;
+    --clr-surface-tonal-a20: #d4d5dd;
+    --clr-surface-tonal-a30: #c7c9cf;
+    --clr-surface-tonal-a40: #bbbcc1;
+    --clr-surface-tonal-a50: #afb0b4;
+
+    --text-white: white;
+}
+
+:root .dark {
+    /** Base colors */
+    --clr-dark-a0: #000000;
+    --clr-light-a0: #ffffff;
+    --text: var(--clr-light-a0);
+    --text-inverse: var(--clr-dark-a0);
+
+    /** Theme primary colors */
+    --clr-primary-a0: #3e69c4;
+    --clr-primary-a10: #5978cb;
+    --clr-primary-a20: #7188d2;
+    --clr-primary-a30: #8798d8;
+    --clr-primary-a40: #9ba8df;
+    --clr-primary-a50: #b0b9e6;
+
+    /** Theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+
+    /** Theme tonal surface colors */
+    --clr-surface-tonal-a0: #191a21;
+    --clr-surface-tonal-a10: #2e2f36;
+    --clr-surface-tonal-a20: #45454c;
+    --clr-surface-tonal-a30: #5c5d63;
+    --clr-surface-tonal-a40: #75767b;
+    --clr-surface-tonal-a50: #8f9094;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #3F69C4, #5355CF 50%, #7cb6cb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animateTextGradient 2s ease-in-out infinite alternate;
+}
+
+@keyframes animateTextGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

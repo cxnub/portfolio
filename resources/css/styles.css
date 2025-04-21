@@ -346,7 +346,9 @@ footer {
 }
 
 .contacts a {
-    height: 36px;
+    height: 3vw;
+    min-height: 16px;
+    max-height: 36px;
     aspect-ratio: 1;
     background-color: var(--clr-primary-a10);
     padding: 16px;
